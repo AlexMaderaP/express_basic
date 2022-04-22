@@ -20,3 +20,13 @@ app.listen(port, () => {
 app.get('/launchx', (req,res) => {
     res.send('Bienvenidos a launchx')
 })
+
+//Regresando un objeto
+//localhost:3000/explorersInNode
+app.get('/explorersInNode', (req,res) =>{
+    const expolorer = {name: 'Explorer', msg: 'Hello'}
+    res.send(expolorer)
+})
+
+//Query Params: Recibir parametros por la url
+//http://localhost:3000/explroers/carlo
